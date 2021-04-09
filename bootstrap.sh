@@ -1,4 +1,6 @@
 sudo apt-get update
+
+# DO has an older image, we need to force upgrade to get through automatically.
 sudo apt-get upgrade -y -o Dpkg::Options::="--force-confold" --force-yes
 
 # Checkout the source and install
