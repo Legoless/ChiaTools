@@ -38,10 +38,10 @@ echo "chia plots create -k 32 -n 1 -e -r 2 -t $DESTINATION_DIR -d $DESTINATION_D
 
 chmod +x automate.sh
 
-echo "tmux new-session -d -s "PlotSession" './automate.sh'"
+#echo "tmux new-session -d -s "PlotSession" './automate.sh'"
 
 #
 # Run tmux
 #
 
-# tmux new-session -d -s "PlotSession" './automate.sh'
+tmux new-session -d -s "PlotSession" './automate.sh'
