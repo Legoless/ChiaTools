@@ -26,7 +26,7 @@ if [ -f "/dev/nvme0n1" ]; then
     
     sudo mkfs.ext4 -E nodiscard /dev/nvme0n1
     sudo mount -o discard /dev/nvme0n1 $DESTINATION_DIR
-    /dev/nvme0n1 $DESTINATION_DIR ext4 defaults,nofail,discard 0 2
+    #/dev/nvme0n1 $DESTINATION_DIR ext4 defaults,nofail,discard 0 2
 fi
 
 #
